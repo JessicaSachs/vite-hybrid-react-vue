@@ -1,15 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
 import './index.css'
-import ReactApp from './react/App'
 import VueApp from './vue/App.vue'
 import { createApp } from 'vue'
-
-ReactDOM.render(
-  <React.StrictMode>
-    <ReactApp />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+// import { renderReact } from './react/entry'
 
 createApp(VueApp).mount('#app')
+
+// Explicitly render React to a specific target.
+// renderReact()

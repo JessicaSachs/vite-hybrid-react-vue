@@ -1,17 +1,18 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div ref="reactTarget"></div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import HelloWorld from './components/HelloWorld.vue'
+import { onMounted, ref } from 'vue'
+import { renderReact } from '../react/entry'
 
-export default defineComponent({
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+const reactTarget = ref(null)
+
+onMounted(() => {
+  renderReact(reactTarget.value)
 })
 </script>
 
