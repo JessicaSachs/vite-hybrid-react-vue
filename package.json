@@ -1,5 +1,5 @@
 {
-  "name": "base",
+  "name": "vite-hybrid-vue-react",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
