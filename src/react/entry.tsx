@@ -6,7 +6,7 @@ export async function renderReact(target = document.getElementById('root')) {
 
   return ReactDOM.render(
     <React.StrictMode>
-      <ReactApp {...props} />
+      <ReactApp />
     </React.StrictMode>,
     target
   )
