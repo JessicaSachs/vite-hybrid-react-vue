@@ -1,11 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
+import ReactApp from './react/App'
+import VueApp from './vue/App.vue'
+import { createApp } from 'vue'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ReactApp />
   </React.StrictMode>,
   document.getElementById('root')
 )
+
+createApp(VueApp).mount('#app')
